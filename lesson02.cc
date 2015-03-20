@@ -14,6 +14,7 @@
 //
 // Lesson 02:
 //
+// - Main loop
 // - Event processing
 //
 
