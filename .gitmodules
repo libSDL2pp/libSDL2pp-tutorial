@@ -1,0 +1,3 @@
+[submodule "SDL2pp"]
+	path = SDL2pp
+	url = https://github.com/AMDmi3/libSDL2pp.git
