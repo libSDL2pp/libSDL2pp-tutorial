@@ -1,12 +1,12 @@
 # libSDL2pp tutorial
 
-[![Build Status](https://travis-ci.org/AMDmi3/libSDL2pp-tutorial.svg?branch=master)](https://travis-ci.org/AMDmi3/libSDL2pp-tutorial)
+[![Build Status](https://travis-ci.org/libSDL2pp/libSDL2pp-tutorial.svg?branch=master)](https://travis-ci.org/libSDL2pp/libSDL2pp-tutorial)
 
 ---
 
 ![Screenshot](screenshots/lesson07.png)
 
-Here's tutorial for [libSDL2pp](https://github.com/AMDmi3/libSDL2pp),
+Here's tutorial for [libSDL2pp](https://github.com/libSDL2pp/libSDL2pp),
 C++11 bindings/wrapper for SDL2. It covers core functionality of
 the library, including initialization and window construction,
 loading image files, sprite and text rendering, animation, and event
