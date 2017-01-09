@@ -134,8 +134,8 @@ int main() try {
 				Rect((int)position, vcenter - 50, 50, 50)
 			);
 
-		// Draw the same sprite, below the first one, 50% transparent and
-		// vertically flipped. It'll look like reflection in the mirror
+		// Draw the same sprite, below the first one, vertically flipped.
+		// It'll look like reflection in the mirror
 		renderer.Copy(
 				sprites,
 				Rect(src_x, src_y, 50, 50),
