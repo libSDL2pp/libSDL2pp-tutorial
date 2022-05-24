@@ -9,41 +9,40 @@
 # You should have received a copy of the CC0 Public Domain Dedication along with
 # this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-PROJECT(SDL2pp-tutorial)
-
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+cmake_minimum_required(VERSION 3.16 FATAL_ERROR)
+project(SDL2pp-tutorial LANGUAGES CXX)
 
 # set up SDL2pp library
-SET(SDL2PP_WITH_IMAGE YES)
-SET(SDL2PP_WITH_TTF YES)
-ADD_SUBDIRECTORY(SDL2pp)
+set(SDL2PP_WITH_IMAGE YES)
+set(SDL2PP_WITH_TTF YES)
+add_subdirectory(SDL2pp)
 
 # add compilation flags
-SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-ADD_DEFINITIONS(-DDATA_PATH="${PROJECT_SOURCE_DIR}/data")
-INCLUDE_DIRECTORIES(${SDL2PP_INCLUDE_DIRS})
+set(CMAKE_CXX_STANDARD 17)
+add_definitions(-DDATA_PATH="${PROJECT_SOURCE_DIR}/data")
+include_directories(${SDL2PP_INCLUDE_DIRS})
 
 # define targets
-ADD_EXECUTABLE(lesson00 lesson00.cc)
-TARGET_LINK_LIBRARIES(lesson00 ${SDL2PP_LIBRARIES})
+add_executable(lesson00 lesson00.cc)
+target_link_libraries(lesson00 PUBLIC SDL2pp)
 
-ADD_EXECUTABLE(lesson01 lesson01.cc)
-TARGET_LINK_LIBRARIES(lesson01 ${SDL2PP_LIBRARIES})
+add_executable(lesson01 lesson01.cc)
+target_link_libraries(lesson01 PUBLIC SDL2pp)
 
-ADD_EXECUTABLE(lesson02 lesson02.cc)
-TARGET_LINK_LIBRARIES(lesson02 ${SDL2PP_LIBRARIES})
+add_executable(lesson02 lesson02.cc)
+target_link_libraries(lesson02 PUBLIC SDL2pp)
 
-ADD_EXECUTABLE(lesson03 lesson03.cc)
-TARGET_LINK_LIBRARIES(lesson03 ${SDL2PP_LIBRARIES})
+add_executable(lesson03 lesson03.cc)
+target_link_libraries(lesson03 PUBLIC SDL2pp)
 
-ADD_EXECUTABLE(lesson04 lesson04.cc)
-TARGET_LINK_LIBRARIES(lesson04 ${SDL2PP_LIBRARIES})
+add_executable(lesson04 lesson04.cc)
+target_link_libraries(lesson04 PUBLIC SDL2pp)
 
-ADD_EXECUTABLE(lesson05 lesson05.cc)
-TARGET_LINK_LIBRARIES(lesson05 ${SDL2PP_LIBRARIES})
+add_executable(lesson05 lesson05.cc)
+target_link_libraries(lesson05 PUBLIC SDL2pp)
 
-ADD_EXECUTABLE(lesson06 lesson06.cc)
-TARGET_LINK_LIBRARIES(lesson06 ${SDL2PP_LIBRARIES})
+add_executable(lesson06 lesson06.cc)
+target_link_libraries(lesson06 PUBLIC SDL2pp)
 
-ADD_EXECUTABLE(lesson07 lesson07.cc)
-TARGET_LINK_LIBRARIES(lesson07 ${SDL2PP_LIBRARIES})
+add_executable(lesson07 lesson07.cc)
+target_link_libraries(lesson07 PUBLIC SDL2pp)
